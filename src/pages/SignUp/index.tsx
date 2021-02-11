@@ -12,7 +12,7 @@ import Button from '../../components/Button';
 import { Container, Content, Background } from './styles';
 
 const SignUp: React.FC = () => {
-  const handleSubmit = useCallback(async (data: any) => {
+  const handleSubmit = useCallback(async (data: object) => {
     try {
       const schema = Yup.object().shape({
         name: Yup.string().required('Nome obrigatório'),
